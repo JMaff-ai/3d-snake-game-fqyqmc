@@ -20,13 +20,23 @@ class Snake {
     }
     public move(squares: number) {
       this.currentPosition += this.currentDirection * squares;
+      if()
     }
     public newPoint() {
       this.xcoord += 0;
       this.ycoord += 0;
     }
     public turnLeft() {
-      if
+      if(this.xcoord == 90) display(this.currentDirection);
+      else if(this.xcoord == 180) display(this.currentDirection);
+      else if(this.xcoord == 270) display(this.currentDirection);
+      else display(this.currentDirection);
+    }
+    public turnRight() {
+      if(this.ycoord == -90) display(this.currentDirection);
+      else if(this.ycoord == -180) display(this.currentDirection);
+      else if(this.ycoord == -270) display(this.currentDirection);
+      else display(this.currentDirection);
     }
     public get position() {
       return this.currentPosition;
