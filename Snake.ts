@@ -5,14 +5,10 @@ import display from "./display";
 class Snake {
     private currentPosition: number;
     private currentDirection: number;
-    private xcoord: number;
-    private ycoord: number;
     
     public constructor() {
       this.currentPosition == 0;
       this.currentDirection == 1;
-      this.xcoord == 0;
-      this.ycoord == 0;
 
     }
     public turn() {
@@ -40,15 +36,24 @@ class Snake {
       else if(this.ycoord == -270) display(this.currentDirection);
       else display(this.currentDirection);
     }
-    public WorldModel() {
-      Set Snake(s:Snake);
-      this.sna=s;
-      update(steps) = move
-      if(update(steps = move)) display(this.currentPosition);
-    }
     public get position() {
       return this.currentPosition;
     
     }
+    }
+    class Point {
+      private xcoord: number;
+      private ycoord: number;
+
+      public constructor() {
+        this.xcoord == 0;
+        this.ycoord == 0;
+
+      }
+      public WorldModel () {
+        set Snake(s:Snake){
+          this.sna = s;
+        }
+      }
     }
 export: any default Snake;
