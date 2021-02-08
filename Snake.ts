@@ -62,7 +62,7 @@ sna: Snake;
         this.sna = s;
       }
       public update(_steps: Snake) {
-        return Snake
+        return Snake;
       }
     }
 export: any default Snake;
