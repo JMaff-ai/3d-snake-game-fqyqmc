@@ -1,3 +1,4 @@
+import { useCallback } from "react";
 import display from "./display";
 
 // place your code on line 5 above the export statement below
@@ -5,6 +6,7 @@ import display from "./display";
 class Snake {
     private currentPosition: number;
     private currentDirection: number;
+newPoint: any;
     
     public constructor() {
       this.currentPosition == 0;
@@ -20,7 +22,24 @@ class Snake {
       if(this.newPoint = this.position.x+1,this.position.y-1) display(this.position);
       else (this.newPoint = this.position.x-1,this.position.y+1) display(this.position);
     }
-    public newPoint() {
+    
+    
+    public get position() {
+      return this.currentPosition;
+    
+    }
+    }
+    class Point {
+[x: string]: any;
+      private xcoord: number;
+      private ycoord: number;
+
+      public constructor() {
+        this.xcoord == 0;
+        this.ycoord == 0;
+
+      }
+      public newPoint() {
       this.xcoord += 0;
       this.ycoord += 0;
     }
@@ -36,24 +55,14 @@ class Snake {
       else if(this.ycoord == -270) display(this.currentDirection);
       else display(this.currentDirection);
     }
-    public get position() {
-      return this.currentPosition;
-    
     }
-    }
-    class Point {
-      private xcoord: number;
-      private ycoord: number;
-
-      public constructor() {
-        this.xcoord == 0;
-        this.ycoord == 0;
-
+    class WorldModel {
+sna: Snake;
+      set snake(s:Snake) {
+        this.sna = s;
       }
-      public WorldModel () {
-        set Snake(s:Snake){
-          this.sna = s;
-        }
+      public update(_steps: Snake) {
+        return Snake
       }
     }
 export: any default Snake;
