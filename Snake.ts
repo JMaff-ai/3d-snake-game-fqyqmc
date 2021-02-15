@@ -65,4 +65,9 @@ sna: Snake;
         return Snake;
       }
     }
+class SnakeController{
+  public constructor(World,Snake) {
+    
+  }
+}
 export: any default Snake;
