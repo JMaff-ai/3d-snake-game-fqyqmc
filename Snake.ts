@@ -66,7 +66,7 @@ sna: Snake;
       }
     }
 class SnakeController{
-  public constructor(World,Snake) {
+  public constructor() {
     
   }
 }
