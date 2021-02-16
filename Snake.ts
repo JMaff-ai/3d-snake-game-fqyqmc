@@ -26,7 +26,9 @@ newPoint: any;
     
     public get position() {
       return this.currentPosition;
-    
+    }
+    public get direction() {
+      return Snake;
     }
     }
     class Point {
@@ -61,12 +63,43 @@ sna: Snake;
       set snake(s:Snake) {
         this.sna = s;
       }
+      public constructor() {
+        let width = 0;
+        let height = 0;
+      }
+      public get width() {
+        return Snake;
+      }
+      public get height() {
+        return Snake;
+      }
       public update(_steps: Snake) {
         return Snake;
       }
     }
 class SnakeController{
   public constructor() {
+    let World = Number; 
+    let Snake = Number;
+    let snakeWorld = World;
+    let siltherer = Snake;
+  }
+  public turnSnakeLeft() {
+    let turnLeft = Snake;
+  }
+  public turnSnakeRight() {
+    let turnRight = Snake;
+  }
+  public get snakePosition() {
+    return Snake;
+  }
+  public get WorldWidth() {
+    return WorldModel;
+  }
+  public get WorldHeight() {
+    return WorldModel;
+  }
+  class Player extends AvoidWallsPlayer {
     
   }
 }
