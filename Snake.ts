@@ -99,8 +99,12 @@ class SnakeController{
   public get WorldHeight() {
     return WorldModel;
   }
-  class Player extends AvoidWallsPlayer {
-    
+class Player extends AvoidWallsPlayer {
+  public constructor() {
+    super(SnakeController)
+  }
+  public makeTurn() {
+    return SnakeController;
   }
 }
 export: any default Snake;
