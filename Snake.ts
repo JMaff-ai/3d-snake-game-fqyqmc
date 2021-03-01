@@ -76,6 +76,7 @@ sna: Snake;
       public update(_steps: Snake) {
         return Snake;
       }
+      private view = null;
     }
 class SnakeController{
   public constructor() {
@@ -106,5 +107,22 @@ class Player extends AvoidWallsPlayer {
   public makeTurn() {
     return SnakeController;
   }
+}
+const View = Symbol('View');
+
+export default View;
+
+class CanvasView {
+  public constructor() {
+    let WorldWidth = 3;
+    let Worldheight = 10;
+    let canvas = document.createElement("canvas");
+    document.body.appendChild(canvas);
+    const ctx = canvas.getContext('2d');
+    display(WorldModel);
+    display(WorldWidth);
+    display(Worldheight);
+  }
+  
 }
 export: any default Snake;
