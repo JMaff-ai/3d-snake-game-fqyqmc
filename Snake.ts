@@ -113,6 +113,7 @@ const View = Symbol('View');
 export default View;
 
 class CanvasView {
+view: any;
   public constructor() {
     let WorldWidth = 3;
     let Worldheight = 10;
@@ -123,6 +124,8 @@ class CanvasView {
     display(WorldWidth);
     display(Worldheight);
   }
-  
+  public setView(newView) {
+    this.view = newView;
+  }
 }
 export: any default Snake;
