@@ -76,7 +76,11 @@ sna: Snake;
       public update(_steps: Snake) {
         return Snake;
       }
-      private view = null;
+      public view = null;
+      public update(View) {
+        return View
+      }
+      
     }
 class SnakeController{
   public constructor() {
