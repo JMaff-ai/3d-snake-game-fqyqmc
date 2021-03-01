@@ -18,9 +18,9 @@ newPoint: any;
     }
     public move(squares: number) {
       this.currentPosition += this.currentDirection * squares;
-      this.position = this.newPoint;
+      this.position ; this.newPoint;
       if(this.newPoint = this.position.x+1,this.position.y-1) display(this.position);
-      else (this.newPoint = this.position.x-1,this.position.y+1) display(this.position);
+      else (this.newPoint = this.position.x-1,this.position.y+1); display(this.position);
     }
     
     
@@ -101,7 +101,7 @@ class SnakeController{
   }
 class Player extends AvoidWallsPlayer {
   public constructor() {
-    super(SnakeController)
+   super(SnakeController);
   }
   public makeTurn() {
     return SnakeController;
