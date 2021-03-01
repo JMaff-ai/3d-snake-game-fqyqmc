@@ -131,5 +131,9 @@ view: any;
   public setView(newView) {
     this.view = newView;
   }
+  public CanvasView() {
+    let view = WorldModel;
+    return update(view);
+  }
 }
 export: any default Snake;
