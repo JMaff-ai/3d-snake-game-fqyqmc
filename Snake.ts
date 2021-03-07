@@ -127,13 +127,25 @@ view: any;
     display(WorldModel);
     display(WorldWidth);
     display(Worldheight);
-  }
+  } 
   public setView(newView) {
     this.view = newView;
   }
   public CanvasView() {
     let view = WorldModel;
     return update(view);
+  }
+}
+interface InputHandler{Player: any} {
+  const madeLeftMove = Player;
+  const madeRightMove = Player;
+  const resetLeftMove = 0;
+  const resetRightMove = 0;
+}
+class LRKeyInputHandler {
+  public constructor() {
+    const wasLeftArrowPushed = false;
+    const wasRightArrowPushed = false;
   }
 }
 export: any default Snake;
