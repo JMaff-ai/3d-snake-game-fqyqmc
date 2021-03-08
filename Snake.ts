@@ -137,8 +137,8 @@ view: any;
   }
 }
 interface InputHandler{Player: any} {
-  const madeLeftMove = Player;
-  const madeRightMove = Player;
+  const madeLeftMove = true;
+  const madeRightMove = true;
   const resetLeftMove = 0;
   const resetRightMove = 0;
 }
@@ -146,6 +146,20 @@ class LRKeyInputHandler {
   public constructor() {
     const wasLeftArrowPushed = false;
     const wasRightArrowPushed = false;
+  }
+  public textarea = document.getElementById('test-target');
+consoleLog = document.getElementById('console-log');
+btnClearConsole = document.getElementById('btn-clear-console');
+public addEventListener('keydown', (Right => {
+  if (!Right.repeat)
+    (`Key "${Right.key}" pressed  [event: keydown]`);
+  else
+    (`Key "${Right.key}" repeating  [event: keydown]`);
+}
+}
+class HumanPlayer {
+  public constructor() {
+    
   }
 }
 export: any default Snake;
