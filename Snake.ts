@@ -159,7 +159,24 @@ public addEventListener('keydown', (Right => {
 }
 class HumanPlayer {
   public constructor() {
-    
+    let SnakeController = 0;
+    let InputHandler = 0;
+    if (SnakeController = turnSnakeleft) (InputHandler = makeMoveLeft);
+    return true;
   }
 }
+class GameController {
+  private WorldModel: 0;
+  private player1: 0
+  private player2: 0
+  let run = 0 => {
+    console.log(0);
+    requestAnimationFrame(run);
+  };
+requestAnimationFrame(run)
+
+
+}
+let Gamecontroller = HumanPlayer + AvoidWallsPlayer;
+return GameController;
 export: any default Snake;
