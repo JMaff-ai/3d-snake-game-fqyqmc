@@ -74,7 +74,7 @@ sna: Snake;
       public get height() {
         return Snake;
       }
-      public update(_steps: Snake) {
+      public WorldModelupdate(_steps: Snake) {
         return Snake;
       }
       public view = null;
