@@ -133,7 +133,7 @@ view: any;
   }
   public CanvasView() {
     let view = WorldModel;
-    return update(view);
+    return Date();
   }
 }
 interface InputHandler{Player: any} {
