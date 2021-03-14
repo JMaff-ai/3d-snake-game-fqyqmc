@@ -66,6 +66,7 @@ sna: Snake;
       public constructor() {
         let width = 0;
         let height = 0;
+        
       }
       public get width() {
         return Snake;
@@ -77,9 +78,11 @@ sna: Snake;
         return Snake;
       }
       public view = null;
-      public update(View) {
+      public update(View: any) {
         return View
       }
+      const allSnakes = [];
+      const allViews = [];
       
     }
 class SnakeController{
