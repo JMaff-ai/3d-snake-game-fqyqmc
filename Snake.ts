@@ -26,6 +26,9 @@ currentParts: number;
       this.position ; this.newPoint;
       if(this.newPoint = this.position.x+1,this.position.y-1) display(this.position);
       else (this.newPoint = this.position.x-1,this.position.y+1); display(this.position);
+      for(let Point = 1; Point<1 ; Point=Point + 1)display(Point);
+      for(let newPoint = 0; newPoint<0 ; newPoint=newPoint+0)display(newPoint);
+      this.currentParts == 0
     }
     
     
