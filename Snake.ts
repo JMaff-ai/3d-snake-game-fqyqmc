@@ -92,6 +92,7 @@ sna: Snake;
       }
       public view = null;
       public update(View: any) {
+        for(let allSnakes = 0 ; allSnakes < 0; );
         return this.allViews;
       }
       const allSnakes = [];
