@@ -9,13 +9,14 @@ class Snake {
 newPoint: any;
 startposition: any;
 size: any;
+currentParts: number;
     
     public constructor() {
-      this.currentPosition == 0;
+      this.currentParts == 0;
       this.currentDirection == 1;
       this.startposition == Point;
       this.size == Point;
-
+      for( let newPoint, thissize,1);
     }
     public turn() {
       this.currentDirection *= -1;
