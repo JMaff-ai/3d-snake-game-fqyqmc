@@ -7,10 +7,14 @@ class Snake {
     private currentPosition: number;
     private currentDirection: number;
 newPoint: any;
+startposition: any;
+size: any;
     
     public constructor() {
       this.currentPosition == 0;
       this.currentDirection == 1;
+      this.startposition == Point;
+      this.size == Point;
 
     }
     public turn() {
@@ -56,6 +60,11 @@ newPoint: any;
       else if(this.ycoord == -180) display(this.currentDirection);
       else if(this.ycoord == -270) display(this.currentDirection);
       else display(this.currentDirection);
+    }
+    public equals(p) {
+      if (y == x) {
+        return true
+      }
     }
     }
     class WorldModel {
