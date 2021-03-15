@@ -64,8 +64,8 @@ sna: Snake;
         this.sna = s;
       }
       public constructor() {
-        let width = 0;
-        let height = 0;
+        let addSnake = Snake;
+        let addView = View;
         
       }
       public get width() {
@@ -75,14 +75,16 @@ sna: Snake;
         return Snake;
       }
       public WorldModelupdate(_steps: Snake) {
-        return Snake;
+        return this.allSnakes;
       }
       public view = null;
       public update(View: any) {
-        return View
+        return this.allViews;
       }
       const allSnakes = [];
       const allViews = [];
+      const addSnakes = Snake;
+      const addViews = View;
       
     }
 class SnakeController{
